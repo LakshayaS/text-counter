@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+#filler{
+  margin: 53px;
+  font-family: sans-serif;
+}
+
+button{
+  height: 35px;
+  width: 100px;
+  color: red;
+  font-weight: bold;
+  background-color: yellow;
+  border: solid 1px cyan;
+  border-radius: 10px
+}
+textarea{
+  border: solid 2px red;
+  border-radius: 11px;
+}
+
+.omg{
+  background-color: indianred;
+  color: yellow;
+  font-weight: bold;
+  height: 65px;
+  width: 360px;
+  border-bottom: solid 1px black;
+ 
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+.reader{
+  font-family: sans-serif;
+}
+</style>
+</head>
+
+<body>
+  <div class="omg">
+    <center>
+      <p style="padding: 20px">TEXT COUNTER</p>
+    </center>
+  </div>
+  <div>
+    <textarea id="filler" cols="29" rows="7" placeholder="ENTER TEXT"></textarea>
+  </div>
+  <center>
+    <p id="reader"></p>
+  </center>
+  <br>
+  <center><button onclick="text()">CHECK</button></center>
+  <script src="main.js"></script>
+<script>
+var hello= document.getElementById("filler");
+
+
+function text(){
+  document.getElementById('reader').innerHTML="Total:  "+ hello.value.length
+  
+}
+
+
+</script>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <center><b id="elem" style="font-size: 6px;">Made by <b style="font-size: 14px">Lakshaya</b></b></center>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
